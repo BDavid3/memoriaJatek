@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="800">
     <Grid x:Name="grd_main">
-        <Grid x:Name="grd_game">
-            
-        </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="lstbox_size" Grid.Row="0" SelectionChanged="lstbox_size_SelectionChanged"></ListBox>
+        <Grid x:Name="grd_game" Grid.Row="1"> </Grid>
     </Grid>
 </Window>
